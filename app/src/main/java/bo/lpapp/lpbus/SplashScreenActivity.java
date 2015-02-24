@@ -7,7 +7,6 @@ import android.os.Bundle;
 import java.util.Timer;
 import java.util.TimerTask;
 
-
 public class SplashScreenActivity extends Activity {
 
     //Segundos de delay para el Splash

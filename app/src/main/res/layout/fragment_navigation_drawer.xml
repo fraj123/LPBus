@@ -6,9 +6,29 @@
     tools:context="bo.lpapp.lpbus.NavigationDrawerFragment">
 
     <!-- TODO: Update blank fragment layout -->
-    <TextView
+    <LinearLayout
+        android:id="@+id/drawerIcon"
         android:layout_width="match_parent"
-        android:layout_height="match_parent"
-        android:text="@string/hello_blank_fragment" />
+        android:background="#7DF6FA"
+        android:layout_height="wrap_content">
+
+        <ImageView
+            android:layout_marginTop="@dimen/image_margin_top"
+            android:layout_width="280dp"
+            android:layout_height="140dp"
+            android:layout_marginBottom="16dp"
+            android:src="@drawable/im_drawer2"/>
+    </LinearLayout>
+
+    <TextView
+        android:id="@+id/rowText"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/drawerIcon"
+        android:paddingLeft="12dp"
+        android:paddingTop="4dp"
+        android:text="@string/hello_blank_fragment"
+        android:textAppearance="?android:attr/textAppearanceMedium" />
+
 
 </RelativeLayout>
