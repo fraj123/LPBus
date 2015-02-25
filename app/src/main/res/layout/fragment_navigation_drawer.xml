@@ -7,9 +7,9 @@
 
     <!-- TODO: Update blank fragment layout -->
     <LinearLayout
-        android:id="@+id/drawerIcon"
+        android:id="@+id/drawerImage"
         android:layout_width="match_parent"
-        android:background="#7DF6FA"
+        android:background="#8c5b1c"
         android:layout_height="wrap_content">
 
         <ImageView
@@ -20,15 +20,12 @@
             android:src="@drawable/im_drawer2"/>
     </LinearLayout>
 
-    <TextView
-        android:id="@+id/rowText"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_below="@+id/drawerIcon"
-        android:paddingLeft="12dp"
-        android:paddingTop="4dp"
-        android:text="@string/hello_blank_fragment"
-        android:textAppearance="?android:attr/textAppearanceMedium" />
+    <android.support.v7.widget.RecyclerView
+        android:id="@+id/drawerList"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+    </android.support.v7.widget.RecyclerView>
 
 
 </RelativeLayout>
