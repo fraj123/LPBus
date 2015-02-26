@@ -17,7 +17,6 @@ import android.view.ViewGroup;
 import java.util.ArrayList;
 import java.util.List;
 
-
 /**
  * A simple {@link Fragment} subclass.
  */
@@ -62,8 +61,12 @@ public class NavigationDrawerFragment extends Fragment {
 
     public static List<Information> getData() {
         List<Information> data = new ArrayList<>();
-        int[] icons = {R.drawable.ic_action};
-        String[] titles = {"Mapa Offline"};
+        int[] icons = {R.drawable.ic_home, R.drawable.ic_offline_map, R.drawable.ic_online_map,
+                R.drawable.ic_time_notification, R.drawable.ic_schedule, R.drawable.ic_rate,
+                R.drawable.ic_sac, R.drawable.ic_video, R.drawable.ic_help};
+        String[] titles = {"Home", "Mapa Offline", "Mapa Online",
+                "Tiempo de Llegada", "Horarios", "Tarifas",
+                "Servicio de Atencion al Cliente", "Repositorio de Videos", "Ayuda"};
         for(int i = 0; i < titles.length && i < icons.length; i++) {
             Information current = new Information();
             current.iconId = icons[i];
